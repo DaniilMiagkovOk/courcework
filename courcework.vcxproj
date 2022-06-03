@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2af119c7-7b5e-428c-9dac-71b6d3d5840f}</ProjectGuid>
+    <ProjectGuid>{66dcc01c-7ca6-4b21-b737-cb1145e1f807}</ProjectGuid>
     <RootNamespace>courcework</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="courcework.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="various_functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="various_functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
