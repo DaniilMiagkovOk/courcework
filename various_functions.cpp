@@ -12,10 +12,11 @@ unsigned int sort(std::vector<std::string>& source_words)
     unsigned int average_time = 0;
     unsigned int start_time, end_time;   
     int n = 5;
+    std::vector<std::string> words;
     for (int k = 0; k < n; k++)
     {
         start_time = clock();
-        std::vector<std::string> words = source_words;
+        words = source_words;
         for (int i = 1; i < words.size(); i++)
         {
             for (int j = i; j > 0; j--)
@@ -28,7 +29,7 @@ unsigned int sort(std::vector<std::string>& source_words)
         end_time = clock();
         average_time += end_time - start_time;
     }
-
+    source_words = words;
     return average_time / n;
 }
 
